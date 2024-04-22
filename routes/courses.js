@@ -19,7 +19,7 @@ router.get('/:id',(req,res)=>{
     res.send(course)
 });
 
-router.post('', (req,res)=>{
+router.post('/', (req,res)=>{
     //after we validate the name input
 
   const {error} = validateCourse(req.body)

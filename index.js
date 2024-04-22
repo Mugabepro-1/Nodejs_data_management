@@ -21,7 +21,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(express.static('public'))
 app.use(helmet())
-app.use('api/courses', courses)
+app.use('/api/courses', courses)
 app.use('/', home)
 
 if(app.get('env')==='development'){
